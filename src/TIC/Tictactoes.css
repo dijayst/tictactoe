@@ -1,0 +1,36 @@
+
+.Appdiv{
+    
+    width: 300px;
+    overflow: auto;
+    margin: 40px auto;
+    background: rebeccapurple;
+    padding-bottom: 40px;
+    border-radius: 20px;
+    
+}
+button{
+    float: left;
+    margin: 10px;
+    height: 70px;
+    width: 70px;
+    font-size: 55px;
+    background: red;
+    color: blue;
+    text-align: center;
+    border-radius: 5px;
+
+    height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin-top: 15px;
+}
+
+
+.circle {
+  /* background-color: red; */
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin-top: 15px;
+}
