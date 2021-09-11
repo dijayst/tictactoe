@@ -1,8 +1,7 @@
-import { Component } from 'react';
+import React,  {Component} from 'react';
 import './App.css';
 import Tictactoe from './TIC/Tictactoe';
-
-
+import './Tictactoes.css';
 
 //import { BrowserRouter as Router,Switch,Route } from 'react-router-dom'
 /*
@@ -33,20 +32,17 @@ class App extends Component{
 export default App;
 */
 
+
+
 class App extends Component{
   render(){
     
       return(
       <div>
-        
-         <Tictactoe />
-
-        
+         <Tictactoe/>
       </div>
     );
   }
 }
 
 export default App;
-
-

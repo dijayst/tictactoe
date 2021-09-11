@@ -9,7 +9,7 @@
     border-radius: 20px;
     
 }
-button{
+.button{
     float: left;
     margin: 10px;
     height: 70px;
@@ -18,14 +18,18 @@ button{
     background: red;
     color: blue;
     text-align: center;
+    align-items: center;
     border-radius: 5px;
-
     height: 80px;
   width: 80px;
   border-radius: 50%;
   margin-top: 15px;
-}
 
+
+}
+.row{
+  display: flex;
+}
 
 .circle {
   /* background-color: red; */
