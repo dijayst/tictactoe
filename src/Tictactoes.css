@@ -9,6 +9,25 @@
     
 
 }
+button{
+  float: left;
+  margin: 10px;
+  height: 70px;
+  width: 70px;
+  font-size: 55px;
+  background: red;
+  color: blue;
+  border-radius: 5px;
+  height: 80px;
+width: 80px;
+border-radius: 50%;
+margin-top: 15px;
+text-align: center;
+    align-items: center;
+    
+}
+
+
 li{
   float: left;
   margin: 10px;
