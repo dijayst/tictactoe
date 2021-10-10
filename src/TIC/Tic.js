@@ -1,19 +1,9 @@
-import { useState } from "react";
+import React ,{useState,useEffect} from "react";
 
-
-const  cells=["","","","","","","b","",""];
-
-
-/*const AddIcon = "X"
-const RemoveIcon = "O";*/
-
-
-
-
-export default function ListItem({ item }) {
+function Tic({ item }) {
   
-  const [checked, setChecked] = useState(false);
-
+  const [Checked, setChecked] = useState(false);
+  const  cells=["","","","","","","","",""];
 
   /*
 useEffect(() => {
@@ -28,8 +18,8 @@ cells
 
 const refresh=()=>{
 
-}
-*/
+}*/
+
   const checkwinner=()=>{
     const pattern=[
       [0,1,2],
@@ -48,31 +38,33 @@ const refresh=()=>{
     return null;
   }
 
+  return (
+   
+
+<li
+onClick={() => {
+  setChecked(!Checked);
+  console.log(Checked)
+}}
+>{Checked ? "x" : "o" }
 
 
-
-  return (<div>
-    <li
-      onClick={() => {
-        setChecked(!checked);
-        console.log(checked)
-      }}
-    >{checked ? "x" : "o" }
-      
-    </li>
-
-
-<ul className="Appdiv">
-{cells.map((item,index) => {
-  return <ListItem item={item}key={item} />;
-})}
-</ul>
-<button>{cells}</button>
-</div>
-  );
+</li>
+);
 }
+//export default Tic
 
 
+export default function List() {
+  const  cells=["","","","","","","","",""];
 
-
-
+  return (
+      <div>
+          <ul className="Appdiv">
+  {cells.map((item,index) => {
+  return <Tic item={item}key={item} />;
+  })}
+  </ul>
+      </div>
+  )
+}

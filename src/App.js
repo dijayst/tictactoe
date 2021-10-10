@@ -1,16 +1,18 @@
 import React,  {Component} from 'react';
 import './App.css';
-import Tic from './TIC/Tic';
+import List from './List';
 import Tictactoe from './TIC/Tictactoe';
 import './Tictactoes.css';
+import Tic from './TIC/Tic';
+
 
 class App extends Component{
   render(){
     
       return(
       <div>
-         <Tic/>
-
+         <List/>
+<Tic/>
          <br/>
          <br/>
          <Tictactoe/>
