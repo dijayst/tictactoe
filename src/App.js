@@ -1,9 +1,8 @@
 import React,  {Component} from 'react';
 import './App.css';
-import List from './List';
-import Tictactoe from './TIC/Tictactoe';
 import './Tictactoes.css';
-import Tic from './TIC/Tic';
+import Hooks from './Hooks';
+import Tictactoe from './TIC/Tictactoe';
 
 
 class App extends Component{
@@ -11,11 +10,9 @@ class App extends Component{
     
       return(
       <div>
-         <List/>
-<Tic/>
-         <br/>
-         <br/>
-         <Tictactoe/>
+        <Tictactoe/>
+        <br/>
+        <Hooks/>
       </div>
     );
   }
